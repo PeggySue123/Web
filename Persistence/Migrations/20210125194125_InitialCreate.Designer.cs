@@ -9,7 +9,7 @@ using Persistence;
 namespace Persistence.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20210124155229_InitialCreate")]
+    [Migration("20210125194125_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -105,7 +105,7 @@ namespace Persistence.Migrations
                     b.ToTable("SlikeZivotinja");
                 });
 
-            modelBuilder.Entity("Domain.SlikeOglasa", b =>
+            modelBuilder.Entity("Domain.SlikeIzgubljen", b =>
                 {
                     b.Property<Guid>("SlikaId")
                         .HasColumnType("TEXT");
@@ -113,21 +113,41 @@ namespace Persistence.Migrations
                     b.Property<Guid>("OglasId")
                         .HasColumnType("TEXT");
 
-                    b.Property<Guid?>("NadjenoId")
+                    b.HasKey("SlikaId", "OglasId");
+
+                    b.HasIndex("OglasId");
+
+                    b.ToTable("SlikeIzgubljen");
+                });
+
+            modelBuilder.Entity("Domain.SlikeNadjen", b =>
+                {
+                    b.Property<Guid>("SlikaId")
                         .HasColumnType("TEXT");
 
-                    b.Property<Guid?>("UdomljavanjeId")
+                    b.Property<Guid>("OglasId")
                         .HasColumnType("TEXT");
 
                     b.HasKey("SlikaId", "OglasId");
 
-                    b.HasIndex("NadjenoId");
+                    b.HasIndex("OglasId");
+
+                    b.ToTable("SlikeNadjen");
+                });
+
+            modelBuilder.Entity("Domain.SlikeUdomljen", b =>
+                {
+                    b.Property<Guid>("SlikaId")
+                        .HasColumnType("TEXT");
+
+                    b.Property<Guid>("OglasId")
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("SlikaId", "OglasId");
 
                     b.HasIndex("OglasId");
 
-                    b.HasIndex("UdomljavanjeId");
-
-                    b.ToTable("SveSlike");
+                    b.ToTable("SlikeUdomljen");
                 });
 
             modelBuilder.Entity("Domain.Udomljavanje", b =>
@@ -180,51 +200,85 @@ namespace Persistence.Migrations
                     b.ToTable("UdomljeneZivotinje");
                 });
 
-            modelBuilder.Entity("Domain.SlikeOglasa", b =>
+            modelBuilder.Entity("Domain.SlikeIzgubljen", b =>
                 {
-                    b.HasOne("Domain.Nadjeno", null)
-                        .WithMany("SlikeOglasa")
-                        .HasForeignKey("NadjenoId");
-
-                    b.HasOne("Domain.Izgubljeno", "OglasObj")
-                        .WithMany("SlikeOglasa")
+                    b.HasOne("Domain.Izgubljeno", "IzgubljenObj")
+                        .WithMany("SlikeIzgubljen")
                         .HasForeignKey("OglasId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("Domain.Slika", "SlikaObj")
-                        .WithMany("SlikeOglasa")
+                        .WithMany("SlikeIzgubljen")
                         .HasForeignKey("SlikaId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Domain.Udomljavanje", null)
-                        .WithMany("SlikeOglasa")
-                        .HasForeignKey("UdomljavanjeId");
-
-                    b.Navigation("OglasObj");
+                    b.Navigation("IzgubljenObj");
 
                     b.Navigation("SlikaObj");
                 });
 
+            modelBuilder.Entity("Domain.SlikeNadjen", b =>
+                {
+                    b.HasOne("Domain.Nadjeno", "NadjenObj")
+                        .WithMany("SlikeNadjen")
+                        .HasForeignKey("OglasId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Domain.Slika", "SlikaObj")
+                        .WithMany("SlikeNadjen")
+                        .HasForeignKey("SlikaId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("NadjenObj");
+
+                    b.Navigation("SlikaObj");
+                });
+
+            modelBuilder.Entity("Domain.SlikeUdomljen", b =>
+                {
+                    b.HasOne("Domain.Udomljavanje", "UdomljenObj")
+                        .WithMany("SlikeUdomljen")
+                        .HasForeignKey("OglasId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Domain.Slika", "SlikaObj")
+                        .WithMany("SlikeUdomljen")
+                        .HasForeignKey("SlikaId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("SlikaObj");
+
+                    b.Navigation("UdomljenObj");
+                });
+
             modelBuilder.Entity("Domain.Izgubljeno", b =>
                 {
-                    b.Navigation("SlikeOglasa");
+                    b.Navigation("SlikeIzgubljen");
                 });
 
             modelBuilder.Entity("Domain.Nadjeno", b =>
                 {
-                    b.Navigation("SlikeOglasa");
+                    b.Navigation("SlikeNadjen");
                 });
 
             modelBuilder.Entity("Domain.Slika", b =>
                 {
-                    b.Navigation("SlikeOglasa");
+                    b.Navigation("SlikeIzgubljen");
+
+                    b.Navigation("SlikeNadjen");
+
+                    b.Navigation("SlikeUdomljen");
                 });
 
             modelBuilder.Entity("Domain.Udomljavanje", b =>
                 {
-                    b.Navigation("SlikeOglasa");
+                    b.Navigation("SlikeUdomljen");
                 });
 #pragma warning restore 612, 618
         }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Peggy Sue\\Desktop\\WEB\\API\\API.csproj": {}
+    "C:\\Users\\Peggy Sue\\Desktop\\WEB\\Web\\API\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Peggy Sue\\Desktop\\WEB\\API\\API.csproj": {
+    "C:\\Users\\Peggy Sue\\Desktop\\WEB\\Web\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Peggy Sue\\Desktop\\WEB\\API\\API.csproj",
+        "projectUniqueName": "C:\\Users\\Peggy Sue\\Desktop\\WEB\\Web\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\Peggy Sue\\Desktop\\WEB\\API\\API.csproj",
+        "projectPath": "C:\\Users\\Peggy Sue\\Desktop\\WEB\\Web\\API\\API.csproj",
         "packagesPath": "C:\\Users\\Peggy Sue\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Peggy Sue\\Desktop\\WEB\\API\\obj\\",
+        "outputPath": "C:\\Users\\Peggy Sue\\Desktop\\WEB\\Web\\API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Peggy Sue\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Peggy Sue\\Desktop\\WEB\\Application\\Application.csproj": {
-                "projectPath": "C:\\Users\\Peggy Sue\\Desktop\\WEB\\Application\\Application.csproj"
+              "C:\\Users\\Peggy Sue\\Desktop\\WEB\\Web\\Application\\Application.csproj": {
+                "projectPath": "C:\\Users\\Peggy Sue\\Desktop\\WEB\\Web\\Application\\Application.csproj"
               }
             }
           }
@@ -89,14 +89,14 @@
         }
       }
     },
-    "C:\\Users\\Peggy Sue\\Desktop\\WEB\\Application\\Application.csproj": {
+    "C:\\Users\\Peggy Sue\\Desktop\\WEB\\Web\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Peggy Sue\\Desktop\\WEB\\Application\\Application.csproj",
+        "projectUniqueName": "C:\\Users\\Peggy Sue\\Desktop\\WEB\\Web\\Application\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "C:\\Users\\Peggy Sue\\Desktop\\WEB\\Application\\Application.csproj",
+        "projectPath": "C:\\Users\\Peggy Sue\\Desktop\\WEB\\Web\\Application\\Application.csproj",
         "packagesPath": "C:\\Users\\Peggy Sue\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Peggy Sue\\Desktop\\WEB\\Application\\obj\\",
+        "outputPath": "C:\\Users\\Peggy Sue\\Desktop\\WEB\\Web\\Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Peggy Sue\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -113,11 +113,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Peggy Sue\\Desktop\\WEB\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\Peggy Sue\\Desktop\\WEB\\Domain\\Domain.csproj"
+              "C:\\Users\\Peggy Sue\\Desktop\\WEB\\Web\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\Peggy Sue\\Desktop\\WEB\\Web\\Domain\\Domain.csproj"
               },
-              "C:\\Users\\Peggy Sue\\Desktop\\WEB\\Persistence\\Persistence.csproj": {
-                "projectPath": "C:\\Users\\Peggy Sue\\Desktop\\WEB\\Persistence\\Persistence.csproj"
+              "C:\\Users\\Peggy Sue\\Desktop\\WEB\\Web\\Persistence\\Persistence.csproj": {
+                "projectPath": "C:\\Users\\Peggy Sue\\Desktop\\WEB\\Web\\Persistence\\Persistence.csproj"
               }
             }
           }
@@ -156,14 +156,14 @@
         }
       }
     },
-    "C:\\Users\\Peggy Sue\\Desktop\\WEB\\Domain\\Domain.csproj": {
+    "C:\\Users\\Peggy Sue\\Desktop\\WEB\\Web\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Peggy Sue\\Desktop\\WEB\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Peggy Sue\\Desktop\\WEB\\Web\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\Peggy Sue\\Desktop\\WEB\\Domain\\Domain.csproj",
+        "projectPath": "C:\\Users\\Peggy Sue\\Desktop\\WEB\\Web\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\Peggy Sue\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Peggy Sue\\Desktop\\WEB\\Domain\\obj\\",
+        "outputPath": "C:\\Users\\Peggy Sue\\Desktop\\WEB\\Web\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Peggy Sue\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -210,14 +210,14 @@
         }
       }
     },
-    "C:\\Users\\Peggy Sue\\Desktop\\WEB\\Persistence\\Persistence.csproj": {
+    "C:\\Users\\Peggy Sue\\Desktop\\WEB\\Web\\Persistence\\Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Peggy Sue\\Desktop\\WEB\\Persistence\\Persistence.csproj",
+        "projectUniqueName": "C:\\Users\\Peggy Sue\\Desktop\\WEB\\Web\\Persistence\\Persistence.csproj",
         "projectName": "Persistence",
-        "projectPath": "C:\\Users\\Peggy Sue\\Desktop\\WEB\\Persistence\\Persistence.csproj",
+        "projectPath": "C:\\Users\\Peggy Sue\\Desktop\\WEB\\Web\\Persistence\\Persistence.csproj",
         "packagesPath": "C:\\Users\\Peggy Sue\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Peggy Sue\\Desktop\\WEB\\Persistence\\obj\\",
+        "outputPath": "C:\\Users\\Peggy Sue\\Desktop\\WEB\\Web\\Persistence\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Peggy Sue\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -234,8 +234,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Peggy Sue\\Desktop\\WEB\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\Peggy Sue\\Desktop\\WEB\\Domain\\Domain.csproj"
+              "C:\\Users\\Peggy Sue\\Desktop\\WEB\\Web\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\Peggy Sue\\Desktop\\WEB\\Web\\Domain\\Domain.csproj"
               }
             }
           }

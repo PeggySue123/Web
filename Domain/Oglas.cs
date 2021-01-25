@@ -11,6 +11,6 @@ namespace Domain
         public String TelefonKontakta{get; set;}
         public String TekstOglasa{get; set;}
         public Boolean ImaCip{get; set;}
-        public ICollection<SlikeOglasa> SlikeOglasa{get; set;}
+        
     }
 }

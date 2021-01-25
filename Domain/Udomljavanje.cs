@@ -1,4 +1,6 @@
 using System;
+using System.Collections.Generic;
+
 namespace Domain
 {
     public class Udomljavanje : Oglas
@@ -10,5 +12,6 @@ namespace Domain
         public Boolean JelImaPapire{get; set;}
         public Boolean JelVakcinisan{get; set;}
         public String GdeSeZahtevaDaZivi{get; set;}
+        public ICollection<SlikeUdomljen> SlikeUdomljen{get; set;}
     }
 }

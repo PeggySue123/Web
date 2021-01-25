@@ -6,6 +6,8 @@ namespace Domain
     {
         public Guid Id{get; set;}
         public String Put{get; set;}
-        public ICollection<SlikeOglasa> SlikeOglasa{get; set;}
+        public ICollection<SlikeIzgubljen> SlikeIzgubljen{get; set;}
+        public ICollection<SlikeNadjen> SlikeNadjen{get; set;}
+        public ICollection<SlikeUdomljen> SlikeUdomljen{get; set;}
     }
 }

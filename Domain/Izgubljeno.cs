@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Domain
 {
@@ -7,6 +8,7 @@ namespace Domain
         public String Starost{get; set;}
         public String LokacijaGdeJeIzgubljen{get; set;}
         public String ImeZivotinje{get; set;}
+        public ICollection<SlikeIzgubljen> SlikeIzgubljen{get; set;}
 
     }
 }

@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Peggy Sue\\Desktop\\WEB\\Domain\\Domain.csproj",
+      "projectUniqueName": "C:\\Users\\Peggy Sue\\Desktop\\WEB\\Web\\Domain\\Domain.csproj",
       "projectName": "Domain",
-      "projectPath": "C:\\Users\\Peggy Sue\\Desktop\\WEB\\Domain\\Domain.csproj",
+      "projectPath": "C:\\Users\\Peggy Sue\\Desktop\\WEB\\Web\\Domain\\Domain.csproj",
       "packagesPath": "C:\\Users\\Peggy Sue\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Peggy Sue\\Desktop\\WEB\\Domain\\obj\\",
+      "outputPath": "C:\\Users\\Peggy Sue\\Desktop\\WEB\\Web\\Domain\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Peggy Sue\\AppData\\Roaming\\NuGet\\NuGet.Config",

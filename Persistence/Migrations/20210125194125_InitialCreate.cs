@@ -83,63 +83,103 @@ namespace Persistence.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "SveSlike",
+                name: "SlikeIzgubljen",
                 columns: table => new
                 {
                     OglasId = table.Column<Guid>(type: "TEXT", nullable: false),
-                    SlikaId = table.Column<Guid>(type: "TEXT", nullable: false),
-                    NadjenoId = table.Column<Guid>(type: "TEXT", nullable: true),
-                    UdomljavanjeId = table.Column<Guid>(type: "TEXT", nullable: true)
+                    SlikaId = table.Column<Guid>(type: "TEXT", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_SveSlike", x => new { x.SlikaId, x.OglasId });
+                    table.PrimaryKey("PK_SlikeIzgubljen", x => new { x.SlikaId, x.OglasId });
                     table.ForeignKey(
-                        name: "FK_SveSlike_IzgubljeneZivotinje_OglasId",
+                        name: "FK_SlikeIzgubljen_IzgubljeneZivotinje_OglasId",
                         column: x => x.OglasId,
                         principalTable: "IzgubljeneZivotinje",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_SveSlike_NadjeneZivotinje_NadjenoId",
-                        column: x => x.NadjenoId,
+                        name: "FK_SlikeIzgubljen_SlikeZivotinja_SlikaId",
+                        column: x => x.SlikaId,
+                        principalTable: "SlikeZivotinja",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "SlikeNadjen",
+                columns: table => new
+                {
+                    OglasId = table.Column<Guid>(type: "TEXT", nullable: false),
+                    SlikaId = table.Column<Guid>(type: "TEXT", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_SlikeNadjen", x => new { x.SlikaId, x.OglasId });
+                    table.ForeignKey(
+                        name: "FK_SlikeNadjen_NadjeneZivotinje_OglasId",
+                        column: x => x.OglasId,
                         principalTable: "NadjeneZivotinje",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
+                        onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_SveSlike_SlikeZivotinja_SlikaId",
+                        name: "FK_SlikeNadjen_SlikeZivotinja_SlikaId",
+                        column: x => x.SlikaId,
+                        principalTable: "SlikeZivotinja",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "SlikeUdomljen",
+                columns: table => new
+                {
+                    OglasId = table.Column<Guid>(type: "TEXT", nullable: false),
+                    SlikaId = table.Column<Guid>(type: "TEXT", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_SlikeUdomljen", x => new { x.SlikaId, x.OglasId });
+                    table.ForeignKey(
+                        name: "FK_SlikeUdomljen_SlikeZivotinja_SlikaId",
                         column: x => x.SlikaId,
                         principalTable: "SlikeZivotinja",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_SveSlike_UdomljeneZivotinje_UdomljavanjeId",
-                        column: x => x.UdomljavanjeId,
+                        name: "FK_SlikeUdomljen_UdomljeneZivotinje_OglasId",
+                        column: x => x.OglasId,
                         principalTable: "UdomljeneZivotinje",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_SveSlike_NadjenoId",
-                table: "SveSlike",
-                column: "NadjenoId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_SveSlike_OglasId",
-                table: "SveSlike",
+                name: "IX_SlikeIzgubljen_OglasId",
+                table: "SlikeIzgubljen",
                 column: "OglasId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_SveSlike_UdomljavanjeId",
-                table: "SveSlike",
-                column: "UdomljavanjeId");
+                name: "IX_SlikeNadjen_OglasId",
+                table: "SlikeNadjen",
+                column: "OglasId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_SlikeUdomljen_OglasId",
+                table: "SlikeUdomljen",
+                column: "OglasId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "SveSlike");
+                name: "SlikeIzgubljen");
+
+            migrationBuilder.DropTable(
+                name: "SlikeNadjen");
+
+            migrationBuilder.DropTable(
+                name: "SlikeUdomljen");
 
             migrationBuilder.DropTable(
                 name: "IzgubljeneZivotinje");

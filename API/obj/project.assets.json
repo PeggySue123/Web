@@ -1684,11 +1684,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Peggy Sue\\Desktop\\WEB\\API\\API.csproj",
+      "projectUniqueName": "C:\\Users\\Peggy Sue\\Desktop\\WEB\\Web\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "C:\\Users\\Peggy Sue\\Desktop\\WEB\\API\\API.csproj",
+      "projectPath": "C:\\Users\\Peggy Sue\\Desktop\\WEB\\Web\\API\\API.csproj",
       "packagesPath": "C:\\Users\\Peggy Sue\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Peggy Sue\\Desktop\\WEB\\API\\obj\\",
+      "outputPath": "C:\\Users\\Peggy Sue\\Desktop\\WEB\\Web\\API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Peggy Sue\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1705,8 +1705,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\Peggy Sue\\Desktop\\WEB\\Application\\Application.csproj": {
-              "projectPath": "C:\\Users\\Peggy Sue\\Desktop\\WEB\\Application\\Application.csproj"
+            "C:\\Users\\Peggy Sue\\Desktop\\WEB\\Web\\Application\\Application.csproj": {
+              "projectPath": "C:\\Users\\Peggy Sue\\Desktop\\WEB\\Web\\Application\\Application.csproj"
             }
           }
         }

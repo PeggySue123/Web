@@ -10,3 +10,15 @@ C:\Users\Peggy Sue\Desktop\WEB\Domain\obj\Debug\net5.0\Domain.csproj.CoreCompile
 C:\Users\Peggy Sue\Desktop\WEB\Domain\obj\Debug\net5.0\Domain.dll
 C:\Users\Peggy Sue\Desktop\WEB\Domain\obj\Debug\net5.0\ref\Domain.dll
 C:\Users\Peggy Sue\Desktop\WEB\Domain\obj\Debug\net5.0\Domain.pdb
+C:\Users\Peggy Sue\Desktop\WEB\Web\Domain\bin\Debug\net5.0\Domain.deps.json
+C:\Users\Peggy Sue\Desktop\WEB\Web\Domain\bin\Debug\net5.0\Domain.dll
+C:\Users\Peggy Sue\Desktop\WEB\Web\Domain\bin\Debug\net5.0\ref\Domain.dll
+C:\Users\Peggy Sue\Desktop\WEB\Web\Domain\bin\Debug\net5.0\Domain.pdb
+C:\Users\Peggy Sue\Desktop\WEB\Web\Domain\obj\Debug\net5.0\Domain.csprojAssemblyReference.cache
+C:\Users\Peggy Sue\Desktop\WEB\Web\Domain\obj\Debug\net5.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Peggy Sue\Desktop\WEB\Web\Domain\obj\Debug\net5.0\Domain.AssemblyInfoInputs.cache
+C:\Users\Peggy Sue\Desktop\WEB\Web\Domain\obj\Debug\net5.0\Domain.AssemblyInfo.cs
+C:\Users\Peggy Sue\Desktop\WEB\Web\Domain\obj\Debug\net5.0\Domain.csproj.CoreCompileInputs.cache
+C:\Users\Peggy Sue\Desktop\WEB\Web\Domain\obj\Debug\net5.0\Domain.dll
+C:\Users\Peggy Sue\Desktop\WEB\Web\Domain\obj\Debug\net5.0\ref\Domain.dll
+C:\Users\Peggy Sue\Desktop\WEB\Web\Domain\obj\Debug\net5.0\Domain.pdb

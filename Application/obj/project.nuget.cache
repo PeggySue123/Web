@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GFP1CFx+/qlyG2Ew0jLKRyi34NJq/BcNbPuDzBmf3wkA2xolnnkMM8TaWawYK8jLhHdDPJz3GiNqC2dquHnvHg==",
+  "dgSpecHash": "LrNhtsm36KOzDJG/AkAA1f2Josi4ByaDCXqEgGXSgObPX9bTalFBqBVm6UH0ipBdyAGWS01N65iD7nr3Qi5lcA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Peggy Sue\\Desktop\\WEB\\Application\\Application.csproj",
+  "projectFilePath": "C:\\Users\\Peggy Sue\\Desktop\\WEB\\Web\\Application\\Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Peggy Sue\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
     "C:\\Users\\Peggy Sue\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\9.0.0\\mediatr.extensions.microsoft.dependencyinjection.9.0.0.nupkg.sha512",
