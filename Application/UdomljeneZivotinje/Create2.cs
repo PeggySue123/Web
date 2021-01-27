@@ -4,6 +4,8 @@ using System.Threading.Tasks;
 using MediatR;
 using Persistence;
 using Domain;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace Application.UdomljeneZivotinje
 {
@@ -25,6 +27,7 @@ namespace Application.UdomljeneZivotinje
             public Boolean JelImaPapire{get; set;}
             public Boolean JelVakcinisan{get; set;}
             public String GdeSeZahtevaDaZivi{get; set;}
+            public String[] NizSlika{get; set;}
         }
 
         public class Handler : IRequestHandler<Command>
@@ -54,6 +57,17 @@ namespace Application.UdomljeneZivotinje
                     JelVakcinisan = request.JelVakcinisan,
                     GdeSeZahtevaDaZivi = request.GdeSeZahtevaDaZivi
                 };
+
+                oglasi.SlikeUdomljen = new List<SlikeUdomljen>();
+                for(int i=0; i<request.NizSlika.Count(); i++)
+                {
+                    oglasi.SlikeUdomljen.Add(new SlikeUdomljen
+                    {
+                        SlikaObj = new Slika{
+                            Put = request.NizSlika[i]
+                        }
+                    });
+                }
 
                 this.context.UdomljeneZivotinje.Add(oglasi);
                 var success = await this.context.SaveChangesAsync() > 0;

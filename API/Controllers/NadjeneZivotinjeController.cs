@@ -20,13 +20,13 @@ namespace API.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<List<Nadjeno>>> List()
+        public async Task<ActionResult<List<NadjenDTO>>> List()
         {
             return await this.mediator.Send(new List1.Query());
         }
 
         [HttpGet("{id}")]
-        public async Task<ActionResult<Nadjeno>> Details(Guid id)
+        public async Task<ActionResult<NadjenDTO>> Details(Guid id)
         {
             return await this.mediator.Send(new Details1.Query{Id=id});
         }

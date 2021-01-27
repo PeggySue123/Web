@@ -142,3 +142,5 @@ C:\Users\Peggy Sue\Desktop\WEB\Web\API\obj\Debug\net5.0\API.dll
 C:\Users\Peggy Sue\Desktop\WEB\Web\API\obj\Debug\net5.0\ref\API.dll
 C:\Users\Peggy Sue\Desktop\WEB\Web\API\obj\Debug\net5.0\API.pdb
 C:\Users\Peggy Sue\Desktop\WEB\Web\API\obj\Debug\net5.0\API.genruntimeconfig.cache
+C:\Users\Peggy Sue\Desktop\WEB\Web\API\bin\Debug\net5.0\AutoMapper.dll
+C:\Users\Peggy Sue\Desktop\WEB\Web\API\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

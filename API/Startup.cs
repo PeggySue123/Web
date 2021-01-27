@@ -15,6 +15,7 @@ using Microsoft.OpenApi.Models;
 using Persistence;
 using MediatR;
 using Application.IzgubljeneZivotinje;
+using AutoMapper;
 
 namespace API
 {
@@ -40,6 +41,7 @@ namespace API
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "API", Version = "v1" });
             });
             services.AddMediatR(typeof(List.Handler).Assembly);
+            services.AddAutoMapper(typeof(List.Handler));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

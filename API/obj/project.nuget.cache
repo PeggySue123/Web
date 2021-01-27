@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "Wdp+EbbLgIBZYTv9fAp+hvqxtiYsNiG2S+fQH1+rHeVPTQs9nR9piO7o6z3q0iAOHnNjlUlVYhkt4LdRKoS/ow==",
+  "dgSpecHash": "uK5tOSxSRiB/6yICB+eHSuLcxegEEQuhTOWNfbeD4FmVL0a75SKkbbInbwTPeLvYwMgGVvHppojjf8MNdcwuhw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Peggy Sue\\Desktop\\WEB\\Web\\API\\API.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Peggy Sue\\.nuget\\packages\\automapper\\10.1.0\\automapper.10.1.0.nupkg.sha512",
+    "C:\\Users\\Peggy Sue\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.0\\automapper.extensions.microsoft.dependencyinjection.8.1.0.nupkg.sha512",
     "C:\\Users\\Peggy Sue\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Peggy Sue\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
     "C:\\Users\\Peggy Sue\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\9.0.0\\mediatr.extensions.microsoft.dependencyinjection.9.0.0.nupkg.sha512",
@@ -49,6 +51,7 @@
     "C:\\Users\\Peggy Sue\\.nuget\\packages\\system.diagnostics.diagnosticsource\\5.0.0\\system.diagnostics.diagnosticsource.5.0.0.nupkg.sha512",
     "C:\\Users\\Peggy Sue\\.nuget\\packages\\system.identitymodel.tokens.jwt\\6.7.1\\system.identitymodel.tokens.jwt.6.7.1.nupkg.sha512",
     "C:\\Users\\Peggy Sue\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
+    "C:\\Users\\Peggy Sue\\.nuget\\packages\\system.reflection.emit\\4.7.0\\system.reflection.emit.4.7.0.nupkg.sha512",
     "C:\\Users\\Peggy Sue\\.nuget\\packages\\system.security.cryptography.cng\\4.5.0\\system.security.cryptography.cng.4.5.0.nupkg.sha512"
   ],
   "logs": []

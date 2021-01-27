@@ -4,6 +4,8 @@ using System.Threading.Tasks;
 using MediatR;
 using Persistence;
 using Domain;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace Application.NadjeneZivotinje
 {
@@ -20,6 +22,7 @@ namespace Application.NadjeneZivotinje
             public Boolean ImaCip { get; set; }
             public String JelSklonjen{get; set;}
             public Boolean ProverenCip{get; set;}
+            public String[] NizSlika{get; set;}
         }
 
         public class Handler : IRequestHandler<Command>
@@ -44,6 +47,18 @@ namespace Application.NadjeneZivotinje
                     ProverenCip = request.ProverenCip,
                     JelSklonjen = request.JelSklonjen
                 };
+
+                oglasi.SlikeNadjen = new List<SlikeNadjen>();
+                for(int i=0; i<request.NizSlika.Count(); i++)
+                {
+                    oglasi.SlikeNadjen.Add(new SlikeNadjen
+                    {
+                        SlikaObj = new Slika{
+                            Put = request.NizSlika[i]
+                        }
+                    });
+                }
+
 
                 this.context.NadjeneZivotinje.Add(oglasi);
                 var success = await this.context.SaveChangesAsync() > 0;

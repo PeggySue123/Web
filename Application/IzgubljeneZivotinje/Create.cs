@@ -4,6 +4,8 @@ using System.Threading.Tasks;
 using MediatR;
 using Persistence;
 using Domain;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace Application.IzgubljeneZivotinje
 {
@@ -21,6 +23,7 @@ namespace Application.IzgubljeneZivotinje
             public String Starost { get; set; }
             public String LokacijaGdeJeIzgubljen { get; set; }
             public String ImeZivotinje { get; set; }
+            public String[] NizSlika{get; set;}
         }
 
         public class Handler : IRequestHandler<Command>
@@ -46,6 +49,17 @@ namespace Application.IzgubljeneZivotinje
                     LokacijaGdeJeIzgubljen = request.LokacijaGdeJeIzgubljen,
                     ImeZivotinje = request.ImeZivotinje
                 };
+
+                oglasi.SlikeIzgubljen = new List<SlikeIzgubljen>();
+                for(int i=0; i<request.NizSlika.Count(); i++)
+                {
+                    oglasi.SlikeIzgubljen.Add(new SlikeIzgubljen
+                    {
+                        SlikaObj = new Slika{
+                            Put = request.NizSlika[i]
+                        }
+                    });
+                }
 
                 this.context.IzgubljeneZivotinje.Add(oglasi);
                 var success = await this.context.SaveChangesAsync() > 0;
