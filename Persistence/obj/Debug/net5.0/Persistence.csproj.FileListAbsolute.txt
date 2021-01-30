@@ -28,3 +28,6 @@ C:\Users\Peggy Sue\Desktop\WEB\Web\Persistence\obj\Debug\net5.0\Persistence.cspr
 C:\Users\Peggy Sue\Desktop\WEB\Web\Persistence\obj\Debug\net5.0\Persistence.dll
 C:\Users\Peggy Sue\Desktop\WEB\Web\Persistence\obj\Debug\net5.0\ref\Persistence.dll
 C:\Users\Peggy Sue\Desktop\WEB\Web\Persistence\obj\Debug\net5.0\Persistence.pdb
+C:\Users\Peggy Sue\Desktop\WEB\Web\Persistence\bin\Debug\net5.0\Persistence.runtimeconfig.json
+C:\Users\Peggy Sue\Desktop\WEB\Web\Persistence\bin\Debug\net5.0\Persistence.runtimeconfig.dev.json
+C:\Users\Peggy Sue\Desktop\WEB\Web\Persistence\obj\Debug\net5.0\Persistence.genruntimeconfig.cache
