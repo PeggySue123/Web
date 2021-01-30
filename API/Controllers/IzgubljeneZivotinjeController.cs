@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Application.IzgubljeneZivotinje;
 using System;
 using System.Threading;
+using Microsoft.AspNetCore.Authorization;
 
 namespace API.Controllers
 {
@@ -26,6 +27,7 @@ namespace API.Controllers
         }
 
         [HttpGet("{id}")]
+        [Authorize]
         public async Task<ActionResult<IzgubljenDTO>> Details(Guid id)
         {
             return await this.mediator.Send(new Details.Query{Id=id});

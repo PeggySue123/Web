@@ -149,3 +149,5 @@ C:\Users\Peggy Sue\Desktop\WEB\Web\API\bin\Debug\net5.0\Microsoft.AspNetCore.Cry
 C:\Users\Peggy Sue\Desktop\WEB\Web\API\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 C:\Users\Peggy Sue\Desktop\WEB\Web\API\bin\Debug\net5.0\Microsoft.Extensions.Identity.Core.dll
 C:\Users\Peggy Sue\Desktop\WEB\Web\API\bin\Debug\net5.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\Peggy Sue\Desktop\WEB\WEb\API\bin\Debug\net5.0\Infrastructure.dll
+C:\Users\Peggy Sue\Desktop\WEB\WEb\API\bin\Debug\net5.0\Infrastructure.pdb

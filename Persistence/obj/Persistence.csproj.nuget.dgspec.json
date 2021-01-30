@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Peggy Sue\\Desktop\\WEB\\Web\\Persistence\\Persistence.csproj": {}
+    "C:\\Users\\Peggy Sue\\Desktop\\WEB\\WEb\\Persistence\\Persistence.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Peggy Sue\\Desktop\\WEB\\Web\\Domain\\Domain.csproj": {
+    "C:\\Users\\Peggy Sue\\Desktop\\WEB\\WEb\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Peggy Sue\\Desktop\\WEB\\Web\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Peggy Sue\\Desktop\\WEB\\WEb\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\Peggy Sue\\Desktop\\WEB\\Web\\Domain\\Domain.csproj",
+        "projectPath": "C:\\Users\\Peggy Sue\\Desktop\\WEB\\WEb\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\Peggy Sue\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Peggy Sue\\Desktop\\WEB\\Web\\Domain\\obj\\",
+        "outputPath": "C:\\Users\\Peggy Sue\\Desktop\\WEB\\WEb\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Peggy Sue\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,6 +40,10 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Identity": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
               "version": "[5.0.1, )"
@@ -64,14 +68,14 @@
         }
       }
     },
-    "C:\\Users\\Peggy Sue\\Desktop\\WEB\\Web\\Persistence\\Persistence.csproj": {
+    "C:\\Users\\Peggy Sue\\Desktop\\WEB\\WEb\\Persistence\\Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Peggy Sue\\Desktop\\WEB\\Web\\Persistence\\Persistence.csproj",
+        "projectUniqueName": "C:\\Users\\Peggy Sue\\Desktop\\WEB\\WEb\\Persistence\\Persistence.csproj",
         "projectName": "Persistence",
-        "projectPath": "C:\\Users\\Peggy Sue\\Desktop\\WEB\\Web\\Persistence\\Persistence.csproj",
+        "projectPath": "C:\\Users\\Peggy Sue\\Desktop\\WEB\\WEb\\Persistence\\Persistence.csproj",
         "packagesPath": "C:\\Users\\Peggy Sue\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Peggy Sue\\Desktop\\WEB\\Web\\Persistence\\obj\\",
+        "outputPath": "C:\\Users\\Peggy Sue\\Desktop\\WEB\\WEb\\Persistence\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Peggy Sue\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -88,8 +92,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Peggy Sue\\Desktop\\WEB\\Web\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\Peggy Sue\\Desktop\\WEB\\Web\\Domain\\Domain.csproj"
+              "C:\\Users\\Peggy Sue\\Desktop\\WEB\\WEb\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\Peggy Sue\\Desktop\\WEB\\WEb\\Domain\\Domain.csproj"
               }
             }
           }
@@ -105,10 +109,6 @@
           "targetAlias": "net5.0",
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[5.0.1, )"
-            },
-            "Microsoft.EntityFrameworkCore.Design": {
               "target": "Package",
               "version": "[5.0.1, )"
             },
