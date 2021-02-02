@@ -1,6 +1,6 @@
 export class NadjeneZivotinje
 {
-    constructor(id, vrsta, rasa, proverenCip, jelImaCip, sklonjen, tekst, kontaktTelefon, kontaktIme, slike)
+    constructor(id, vrsta, rasa, proverenCip, jelImaCip, sklonjen, tekst, kontaktTelefon, kontaktIme, nekeSlike)
     {
         this.id = id;
         this.vrsta = vrsta;
@@ -11,6 +11,10 @@ export class NadjeneZivotinje
         this.tekst = tekst;
         this.kontaktIme = kontaktIme;
         this.kontaktTelefon = kontaktTelefon;
-        this.slike = slike;
+        this.slike = [];
+        nekeSlike.forEach(slika => 
+            {
+                this.slike.push(slika.put);
+            });
     }
 }

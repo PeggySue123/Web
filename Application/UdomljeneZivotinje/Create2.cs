@@ -6,6 +6,8 @@ using Persistence;
 using Domain;
 using System.Collections.Generic;
 using System.Linq;
+using Microsoft.AspNetCore.Http;
+using System.IO;
 
 namespace Application.UdomljeneZivotinje
 {
@@ -27,7 +29,7 @@ namespace Application.UdomljeneZivotinje
             public Boolean JelImaPapire{get; set;}
             public Boolean JelVakcinisan{get; set;}
             public String GdeSeZahtevaDaZivi{get; set;}
-            public String[] NizSlika{get; set;}
+            public IFormFile[] Slike {get; set;}
         }
 
         public class Handler : IRequestHandler<Command>
@@ -58,16 +60,27 @@ namespace Application.UdomljeneZivotinje
                     GdeSeZahtevaDaZivi = request.GdeSeZahtevaDaZivi
                 };
 
+
+                /*string fileName = "";
+                string path = Directory.GetCurrentDirectory() + "\\Client\\img\\Slike\\";
                 oglasi.SlikeUdomljen = new List<SlikeUdomljen>();
-                for(int i=0; i<request.NizSlika.Count(); i++)
+                foreach(IFormFile slika in request.Slike)
                 {
+                    if (slika != null) {
+                    fileName += slika.FileName;
+                    path = Path.Combine(path, fileName);
+                    using (var fs = new FileStream(path, FileMode.Create)) {
+                        await slika.CopyToAsync(fs);
+                    }
                     oglasi.SlikeUdomljen.Add(new SlikeUdomljen
                     {
                         SlikaObj = new Slika{
-                            Put = request.NizSlika[i]
+                            Put = path
                         }
                     });
-                }
+                    }
+                }*/
+                
 
                 this.context.UdomljeneZivotinje.Add(oglasi);
                 var success = await this.context.SaveChangesAsync() > 0;

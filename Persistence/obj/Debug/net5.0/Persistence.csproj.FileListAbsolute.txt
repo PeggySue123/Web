@@ -28,3 +28,18 @@ C:\Users\Peggy Sue\Desktop\WEB\Web\Persistence\obj\Debug\net5.0\Persistence.cspr
 C:\Users\Peggy Sue\Desktop\WEB\Web\Persistence\obj\Debug\net5.0\Persistence.dll
 C:\Users\Peggy Sue\Desktop\WEB\Web\Persistence\obj\Debug\net5.0\ref\Persistence.dll
 C:\Users\Peggy Sue\Desktop\WEB\Web\Persistence\obj\Debug\net5.0\Persistence.pdb
+C:\xampp\htdocs\Web\Persistence\bin\Debug\net5.0\Persistence.deps.json
+C:\xampp\htdocs\Web\Persistence\bin\Debug\net5.0\Persistence.dll
+C:\xampp\htdocs\Web\Persistence\bin\Debug\net5.0\ref\Persistence.dll
+C:\xampp\htdocs\Web\Persistence\bin\Debug\net5.0\Persistence.pdb
+C:\xampp\htdocs\Web\Persistence\bin\Debug\net5.0\Domain.dll
+C:\xampp\htdocs\Web\Persistence\bin\Debug\net5.0\Domain.pdb
+C:\xampp\htdocs\Web\Persistence\obj\Debug\net5.0\Persistence.csprojAssemblyReference.cache
+C:\xampp\htdocs\Web\Persistence\obj\Debug\net5.0\Persistence.GeneratedMSBuildEditorConfig.editorconfig
+C:\xampp\htdocs\Web\Persistence\obj\Debug\net5.0\Persistence.AssemblyInfoInputs.cache
+C:\xampp\htdocs\Web\Persistence\obj\Debug\net5.0\Persistence.AssemblyInfo.cs
+C:\xampp\htdocs\Web\Persistence\obj\Debug\net5.0\Persistence.csproj.CoreCompileInputs.cache
+C:\xampp\htdocs\Web\Persistence\obj\Debug\net5.0\Persistence.csproj.CopyComplete
+C:\xampp\htdocs\Web\Persistence\obj\Debug\net5.0\Persistence.dll
+C:\xampp\htdocs\Web\Persistence\obj\Debug\net5.0\ref\Persistence.dll
+C:\xampp\htdocs\Web\Persistence\obj\Debug\net5.0\Persistence.pdb

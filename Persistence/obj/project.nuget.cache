@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "28Mh2CJlhkP8fKmpPEMhZ3CqFjG4IPGAnYYwmAm9N+n3vwKHk2rXIYAYsZS1M4VtAfzppci6vfW54WlUjd9YIQ==",
+  "dgSpecHash": "fsAmyKQY/vt66d6zRMRpv2ikj+jEk4LvAE8iSDW1uS3xYuZwEZtub6Byi6hcklSpQPQrB9He1PETHF5Hyvuw0g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Peggy Sue\\Desktop\\WEB\\WEb\\Persistence\\Persistence.csproj",
+  "projectFilePath": "C:\\xampp\\htdocs\\Web\\Persistence\\Persistence.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Peggy Sue\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",
     "C:\\Users\\Peggy Sue\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",

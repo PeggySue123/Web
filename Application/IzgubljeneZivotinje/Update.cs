@@ -34,7 +34,7 @@ namespace Application.IzgubljeneZivotinje
                 var oglas = await this.context.IzgubljeneZivotinje.FindAsync(request.Id);
                 if(oglas == null)
                     throw new Exception("Could not find oglas");
-                
+               
                 oglas.ImaCip = request.ImaCip ?? oglas.ImaCip;
                 oglas.ImeKontakta = request.ImeKontakta ?? oglas.ImeKontakta;
                 oglas.ImeZivotinje = request.ImeZivotinje ?? oglas.ImeZivotinje;

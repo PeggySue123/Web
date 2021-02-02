@@ -6,6 +6,8 @@ using Persistence;
 using Domain;
 using System.Collections.Generic;
 using System.Linq;
+using Microsoft.AspNetCore.Http;
+using System.IO;
 
 namespace Application.IzgubljeneZivotinje
 {
@@ -23,7 +25,7 @@ namespace Application.IzgubljeneZivotinje
             public String Starost { get; set; }
             public String LokacijaGdeJeIzgubljen { get; set; }
             public String ImeZivotinje { get; set; }
-            public String[] NizSlika{get; set;}
+            public IFormFile[] Slike {get; set;}
         }
 
         public class Handler : IRequestHandler<Command>
@@ -50,16 +52,25 @@ namespace Application.IzgubljeneZivotinje
                     ImeZivotinje = request.ImeZivotinje
                 };
 
+              /* string fileName = "";
+                string path = Directory.GetCurrentDirectory() + "\\Client\\img\\Slike\\";
                 oglasi.SlikeIzgubljen = new List<SlikeIzgubljen>();
-                for(int i=0; i<request.NizSlika.Count(); i++)
+                foreach(IFormFile slika in request.Slike)
                 {
+                    if (slika != null) {
+                    fileName += slika.FileName;
+                    path = Path.Combine(path, fileName);
+                    using (var fs = new FileStream(path, FileMode.Create)) {
+                        await slika.CopyToAsync(fs);
+                    }
                     oglasi.SlikeIzgubljen.Add(new SlikeIzgubljen
                     {
                         SlikaObj = new Slika{
-                            Put = request.NizSlika[i]
+                            Put = path
                         }
                     });
-                }
+                    }
+                }*/
 
                 this.context.IzgubljeneZivotinje.Add(oglasi);
                 var success = await this.context.SaveChangesAsync() > 0;

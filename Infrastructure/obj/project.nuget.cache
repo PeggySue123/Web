@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "K8LlJHe1APKxD5yClUL39vcx2cyV7s61a7Pp14d2onIX6WRJ9p/9XQMDhZ5JDxZp66zYNR/ztM/LVcnXYlsbVg==",
+  "dgSpecHash": "SuLA5aIAoiGtsf92+HT4/j/E994H8DV/kuUyoVXl2B9Ntmwi5A2WO6oumH/LJdYNP5SLHpZrflA2ub39vuw6/Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Peggy Sue\\Desktop\\WEB\\WEb\\Infrastructure\\Infrastructure.csproj",
+  "projectFilePath": "C:\\xampp\\htdocs\\Web\\Infrastructure\\Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Peggy Sue\\.nuget\\packages\\automapper\\10.1.0\\automapper.10.1.0.nupkg.sha512",
     "C:\\Users\\Peggy Sue\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.0\\automapper.extensions.microsoft.dependencyinjection.8.1.0.nupkg.sha512",

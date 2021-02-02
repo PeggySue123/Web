@@ -2890,11 +2890,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Peggy Sue\\Desktop\\WEB\\WEb\\API\\API.csproj",
+      "projectUniqueName": "C:\\xampp\\htdocs\\Web\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "C:\\Users\\Peggy Sue\\Desktop\\WEB\\WEb\\API\\API.csproj",
+      "projectPath": "C:\\xampp\\htdocs\\Web\\API\\API.csproj",
       "packagesPath": "C:\\Users\\Peggy Sue\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Peggy Sue\\Desktop\\WEB\\WEb\\API\\obj\\",
+      "outputPath": "C:\\xampp\\htdocs\\Web\\API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Peggy Sue\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -2911,11 +2911,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\Peggy Sue\\Desktop\\WEB\\WEb\\Application\\Application.csproj": {
-              "projectPath": "C:\\Users\\Peggy Sue\\Desktop\\WEB\\WEb\\Application\\Application.csproj"
+            "C:\\xampp\\htdocs\\Web\\Application\\Application.csproj": {
+              "projectPath": "C:\\xampp\\htdocs\\Web\\Application\\Application.csproj"
             },
-            "C:\\Users\\Peggy Sue\\Desktop\\WEB\\WEb\\Infrastructure\\Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\Peggy Sue\\Desktop\\WEB\\WEb\\Infrastructure\\Infrastructure.csproj"
+            "C:\\xampp\\htdocs\\Web\\Infrastructure\\Infrastructure.csproj": {
+              "projectPath": "C:\\xampp\\htdocs\\Web\\Infrastructure\\Infrastructure.csproj"
             }
           }
         }

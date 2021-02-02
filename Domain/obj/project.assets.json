@@ -1732,11 +1732,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\Peggy Sue\\Desktop\\WEB\\Web\\Domain\\Domain.csproj",
+      "projectUniqueName": "C:\\xampp\\htdocs\\Web\\Domain\\Domain.csproj",
       "projectName": "Domain",
-      "projectPath": "c:\\Users\\Peggy Sue\\Desktop\\WEB\\Web\\Domain\\Domain.csproj",
+      "projectPath": "C:\\xampp\\htdocs\\Web\\Domain\\Domain.csproj",
       "packagesPath": "C:\\Users\\Peggy Sue\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\Peggy Sue\\Desktop\\WEB\\Web\\Domain\\obj\\",
+      "outputPath": "C:\\xampp\\htdocs\\Web\\Domain\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Peggy Sue\\AppData\\Roaming\\NuGet\\NuGet.Config",

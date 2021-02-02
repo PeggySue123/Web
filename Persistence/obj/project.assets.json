@@ -2103,11 +2103,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Peggy Sue\\Desktop\\WEB\\WEb\\Persistence\\Persistence.csproj",
+      "projectUniqueName": "C:\\xampp\\htdocs\\Web\\Persistence\\Persistence.csproj",
       "projectName": "Persistence",
-      "projectPath": "C:\\Users\\Peggy Sue\\Desktop\\WEB\\WEb\\Persistence\\Persistence.csproj",
+      "projectPath": "C:\\xampp\\htdocs\\Web\\Persistence\\Persistence.csproj",
       "packagesPath": "C:\\Users\\Peggy Sue\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Peggy Sue\\Desktop\\WEB\\WEb\\Persistence\\obj\\",
+      "outputPath": "C:\\xampp\\htdocs\\Web\\Persistence\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Peggy Sue\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -2124,8 +2124,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\Peggy Sue\\Desktop\\WEB\\WEb\\Domain\\Domain.csproj": {
-              "projectPath": "C:\\Users\\Peggy Sue\\Desktop\\WEB\\WEb\\Domain\\Domain.csproj"
+            "C:\\xampp\\htdocs\\Web\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\xampp\\htdocs\\Web\\Domain\\Domain.csproj"
             }
           }
         }

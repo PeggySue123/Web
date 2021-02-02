@@ -1,6 +1,6 @@
-import {izgubljeneZivotinje} from "izgubljeneZivotinje.js"
+import {NadjeneZivotinje} from "./NadjeneZivotinje.js"
 
-export class IzgubljeneZivotinjeView
+export class NadjeneZivotinjeView
 {
     constructor(container, objekat)
     {
@@ -11,7 +11,8 @@ export class IzgubljeneZivotinjeView
     IscrtajMaliOglas() 
     {
         var img = document.createElement("img");
-        img.src = "./Slike/milic.jpg";
+        img.src = this.objekat.slike[0];
+        img.className = "slike";
         this.container.appendChild(img);
     }
 }

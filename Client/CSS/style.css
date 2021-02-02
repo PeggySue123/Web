@@ -3,4 +3,137 @@ html, body
     width : 100vw;
     height : 100vh;
     overflow-x : hidden;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../img/Slike/2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+}
+
+.slike
+{
+    height: 40vh;
+    width: 40vh;
+}
+
+.dugme
+{
+    width: 10vh;
+    height: 10vh;
+    background-color: silver;
+    margin-top: 5vh;
+    border-radius: 4vh;
+}
+
+.tekstNaPocetnoj
+{
+    margin-top: 10vh;
+    height: 10vh;
+    background-color: #cccccc;
+    background-image: linear-gradient(red, silver);
+    text-align: center;
+    border-radius: 5vh;
+    padding: 1vh;
+}
+
+.tekstNaDnu
+{
+    margin-top: 5vh;
+    height: 10vh;
+    background-image: linear-gradient(silver, red);
+    text-align: center;
+    border-radius: 5vh;
+    padding: 1vh;
+    padding-top: 1vh;
+}
+
+.pitaj
+{
+    height: 50vh;
+}
+
+/*.dugmici
+{
+    background-color: red;
+    height: 3vh;
+}*/
+
+.formica
+{
+    height: 50vh;
+    width: 60vh;
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.tekstici
+{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: medium;
+    margin-left: 1vh;
+    margin-right: 1vh;
+    margin-top: 1vh;
+}
+
+.strana
+{
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    align-content: space-between;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    margin-left: 10vh;
+}
+
+.podatak
+{
+    margin-top: 2vh;
+    margin-left: 1vh;
+    margin-right: 1vh;
+    width: 60vh;
+    height: 40vh;
+    background-color: cornsilk;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    overflow-x: hidden;
+}
+
+.podaci
+{
+    font-family: cursive;
+    font-size: medium;
+}
+
+.maliDiv
+{
+    height: 30vh;
+    width: 30vh;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 5vh;
+}
+
+.dugm
+{
+    height: 10vh;
+    width: 10vh;
+    margin-left: 2vh;
+    margin-right: 2vh;
+}
+
+.vrDiv
+{
+    width: 20vh;
+    height: 20vh;
 }
