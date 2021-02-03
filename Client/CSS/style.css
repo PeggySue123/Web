@@ -10,7 +10,7 @@ html, body
     background-image: url("../img/Slike/2.jpg");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 100% 100%;
 
 }
 
@@ -80,6 +80,12 @@ html, body
     margin-top: 1vh;
 }
 
+.tekstic1
+{
+    
+   height: 3vh;
+}
+
 .strana
 {
     width: 90%;
@@ -136,4 +142,12 @@ html, body
 {
     width: 20vh;
     height: 20vh;
+}
+
+.stranica
+{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    height: fit-content;
 }

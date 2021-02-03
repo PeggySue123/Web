@@ -27,6 +27,9 @@ tekstNaDnu.className = "tekstici";
 tekstNaDnu.innerHTML = "Pogledajte oglase izgubljenih životinja";
 const tekstNaDnuDiv = document.createElement("div");
 tekstNaDnuDiv.className = "tekstNaDnu";
+const izmedju = document.createElement("div");
+izmedju.className = "tekstic1";
+tekstNaDnuDiv.appendChild(izmedju);
 tekstNaDnuDiv.appendChild(tekstNaDnu);
 
 var dugmeZaDodavanje = document.createElement("button");

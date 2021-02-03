@@ -15,8 +15,8 @@ export class IzgubljeneZivotinjeView
         var nazivVrsta = this.objekat.vrsta;
         var nazivRasa = this.objekat.rasa;
         var nazivStarost = this.objekat.starost;
-        var nazivCip = this.objekat.imaCip;
-        var nazivLokacija = this.objekat.lokacijaGdeJeIzgubljen;
+        var nazivCip = this.objekat.cip;
+        var nazivLokacija = this.objekat.lokacija;
         var nazivTekst = this.objekat.tekstOglasa;
         var nazivIme = this.objekat.ime;
         var nazivImeK = this.objekat.kontaktIme;
@@ -85,6 +85,9 @@ export class IzgubljeneZivotinjeView
                 while(body.children.length > 0)
                     body.removeChild(body.children[0]);
 
+                var strana = document.createElement("div");
+                strana.className = "stranica";    
+                
                 var forma = document.createElement("form");
                 forma.className = "formica";
 
@@ -92,7 +95,6 @@ export class IzgubljeneZivotinjeView
                 unesiVrstu.type = "text";
                 unesiVrstu.placeholder = "Vrsta životinje";
                 unesiVrstu.value = nazivVrsta;
-                console.log(nazivVrsta);
 
                 var unesiRasu = document.createElement("input");
                 unesiRasu.type = "text";
@@ -113,7 +115,7 @@ export class IzgubljeneZivotinjeView
                 unesiCipOption2.value = "Nije čipovan";
                 unesiCipOption2.innerHTML = "Nije čipovan";
                 unesiCip.appendChild(unesiCipOption2);
-                unesiCip.value = nazivCip;
+                unesiCip.value = (nazivCip)? "Čipovan" : "Nije čipovan";
 
                 var unesiLokaciju = document.createElement("input");
                 unesiLokaciju.type = "text";
@@ -156,14 +158,13 @@ export class IzgubljeneZivotinjeView
                 var dodajOglasButton = document.createElement("button");
                 dodajOglasButton.innerHTML = "Dodaj oglas";
                 dodajOglasButton.className = "dugme";
-
+                dodajOglasButton.id = "dodaj";
                 
                 prviDiv.appendChild(dodajOglasButton);
                 drugiDiv.appendChild(vratiSe);
-                forma.appendChild(prviDiv);
-                forma.appendChild(drugiDiv);
+                
 
-                body.appendChild(forma);
+                strana.appendChild(forma);
                 forma.appendChild(unesiVrstu);
                 forma.appendChild(unesiRasu);
                 forma.appendChild(unesiStarost);
@@ -173,21 +174,25 @@ export class IzgubljeneZivotinjeView
                 forma.appendChild(unesiIme);
                 forma.appendChild(unesiKontakt);
                 forma.appendChild(unesiTelefon);
-                var data;
-                data = {
-                    vrsta: forma.children[0].value,
-                    rasa: forma.children[1].value,
-                    imeKontakta: forma.children[7].value,
-                    telefonKontakta: forma.children[8].value,
-                    tekstOglasa: forma.children[5].value,
-                    imaCip: forma.children[3].value == "Čipovan",
-                    starost: forma.children[2].value,
-                    lokacijaGdeJeIzgubljen: forma.children[4].value,
-                    imeZivotinje: forma.children[6].value
-                }
+                forma.appendChild(prviDiv);
+                strana.appendChild(drugiDiv);
+                body.appendChild(strana);
+                
 
                 forma.addEventListener("submit",function(e){
                     e.preventDefault();
+                    var data;
+                    data = {
+                        vrsta: forma.children[0].value,
+                        rasa: forma.children[1].value,
+                        imeKontakta: forma.children[7].value,
+                        telefonKontakta: forma.children[8].value,
+                        tekstOglasa: forma.children[5].value,
+                        imaCip: forma.children[3].value == "Čipovan",
+                        starost: forma.children[2].value,
+                        lokacijaGdeJeIzgubljen: forma.children[4].value,
+                        imeZivotinje: forma.children[6].value
+                    }
                     fetch("http://localhost:5000/api/IzgubljeneZivotinje" + "/" + podatak.id, {
                     method: "PUT",
                     headers: {
