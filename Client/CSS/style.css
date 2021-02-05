@@ -29,6 +29,15 @@ html, body
     border-radius: 4vh;
 }
 
+.dugmici
+{
+    width: 15vh;
+    height: 15vh;
+    background-color: blanchedalmond;
+    margin-top: 5vh;
+    border-radius: 4vh;   
+}
+
 .tekstNaPocetnoj
 {
     margin-top: 10vh;
@@ -54,6 +63,10 @@ html, body
 .pitaj
 {
     height: 50vh;
+    width: 70vh;
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
 }
 
 /*.dugmici

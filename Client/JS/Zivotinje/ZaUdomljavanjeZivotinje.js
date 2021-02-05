@@ -1,6 +1,6 @@
 export class ZaUdomljavanjeZivotinje
 {
-    constructor(id, vrsta, rasa, ime, starost, cip, sterilisan, ugovor, papiri, vakcinisan, gdeDaZivi, tekst, kontaktTelefon, kontaktIme, nekeSlike)
+    constructor(id, vrsta, rasa, ime, starost, cip, sterilisan, ugovor, papiri, vakcinisan, gdeDaZivi, tekst, kontaktTelefon, kontaktIme)
     {
         this.id = id;
         this.rasa = rasa;
@@ -13,14 +13,14 @@ export class ZaUdomljavanjeZivotinje
         this.papiri = papiri;
         this.vakcinisan = vakcinisan;
         this.gdeDaZivi = gdeDaZivi;
-        this.tekst = tekst;
+        this.tekstOglasa = tekst;
         this.kontaktIme = kontaktIme;
         this.kontaktTelefon = kontaktTelefon;
-        this.slike = [];
+        /*this.slike = [];
         nekeSlike.forEach(slika => 
             {
                 this.slike.push(slika.put);
-            });
+            });*/
     }
 
     

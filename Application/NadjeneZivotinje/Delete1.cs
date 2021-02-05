@@ -22,7 +22,7 @@ namespace Application.NadjeneZivotinje
             }
             public async Task<Unit> Handle(Command request, CancellationToken cancellationToken)
             {
-                var oglas = await this.context.IzgubljeneZivotinje.FindAsync(request.Id);
+                var oglas = await this.context.NadjeneZivotinje.FindAsync(request.Id);
 
                 if(oglas==null)
                     throw new Exception("Could not find oglas");
